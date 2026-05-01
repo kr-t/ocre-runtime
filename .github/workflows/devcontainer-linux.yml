@@ -16,7 +16,7 @@ jobs:
     name: Necessary?
     runs-on: ubuntu-24.04
     outputs:
-      build: ${{ steps.changed-files.outputs.all_changed_and_modified_files != '' }}
+      build: ${{ github.event_name == 'workflow_dispatch' || steps.changed-files.outputs.all_changed_and_modified_files != '' }}
       devcontainer-tag: ${{ steps.devcontainer-tag.outputs.tag }}
 
     steps:
