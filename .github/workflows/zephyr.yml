@@ -17,7 +17,7 @@ on:
 jobs:
   build-zephyr:
     name: Build
-    runs-on: ["self-hosted", "build-server"]
+    runs-on: ubuntu-24.04
     container:
       image: ghcr.io/${{ github.repository }}/devcontainer-zephyr:${{ inputs.devcontainer-tag }}
       options: --user 1000:1000
@@ -80,7 +80,7 @@ jobs:
   run-zephyr:
     name: Run
     needs: build-zephyr
-    runs-on: ["self-hosted", "build-server"]
+    runs-on: ubuntu-24.04
     container:
       image: ghcr.io/${{ github.repository }}/devcontainer-zephyr:${{ inputs.devcontainer-tag }}
       options: --user 1000:1000

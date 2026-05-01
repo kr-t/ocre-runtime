@@ -17,7 +17,7 @@ on:
 jobs:
   zephyr-systests:
     name: Build and Run System Tests
-    runs-on: ["self-hosted", "build-server"]
+    runs-on: ubuntu-24.04
     container:
       image: ghcr.io/${{ github.repository }}/devcontainer-zephyr:${{ inputs.devcontainer-tag }}
       options: --user 1000:1000
