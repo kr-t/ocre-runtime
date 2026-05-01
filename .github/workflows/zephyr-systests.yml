@@ -41,6 +41,9 @@ jobs:
           path: ocre-runtime
           submodules: true
 
+      - name: Configure git safe directory
+        run: git config --global --add safe.directory "$GITHUB_WORKSPACE/ocre-runtime"
+
       - name: West init
         run: |
           . /opt/zephyr-venv/bin/activate

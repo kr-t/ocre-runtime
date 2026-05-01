@@ -32,6 +32,9 @@ jobs:
         with:
           submodules: true
 
+      - name: Configure git safe directory
+        run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+
       - name: Configure (system tests)
         run: mkdir build && cd build && cmake ../tests/system/posix
 
