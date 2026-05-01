@@ -27,7 +27,7 @@ jobs:
       - name: Clean workspace
         run: find . -name . -o -prune -exec rm -rf -- {} +
 
-      - name: checkout
+      - name: Checkout
         uses: actions/checkout@v6
         with:
           fetch-depth: 0
