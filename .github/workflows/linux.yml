@@ -74,6 +74,7 @@ jobs:
           path: build/coverage
 
       - name: Report code coverage
+        if: github.event.pull_request.head.repo.full_name == github.repository
         uses: marocchino/sticky-pull-request-comment@v3
         with:
           GITHUB_TOKEN: ${{ secrets.TOKEN_WRITE_PR }}
