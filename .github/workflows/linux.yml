@@ -81,7 +81,7 @@ jobs:
         if: github.event.pull_request.head.repo.full_name == github.repository
         uses: marocchino/sticky-pull-request-comment@v3
         with:
-          GITHUB_TOKEN: ${{ secrets.TOKEN_WRITE_PR }}
+          GITHUB_TOKEN: ${{ secrets.PRIVATE_ACCESS }}
           path: build/report.md
 
       - name: Delete build directory
