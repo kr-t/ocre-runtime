@@ -13,3 +13,6 @@
 [submodule "tests/Unity"]
 	path = tests/Unity
 	url = https://github.com/ThrowTheSwitch/Unity.git
+[submodule "ocre-extra"]
+	path = ocre-extra
+	url = git@github.com:kr-t/ocre-extra.git
