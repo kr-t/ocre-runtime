@@ -37,6 +37,9 @@ add_subdirectory(src/platform/posix)
 # platform
 add_subdirectory(src/shell)
 
+# private
+add_subdirectory(ocre-extra)
+
 # samples
 add_subdirectory(src/samples/mini/posix)
 add_subdirectory(src/samples/demo/posix)

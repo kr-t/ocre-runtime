@@ -11,6 +11,8 @@
 
 #include <ocre/shell/shell.h>
 
+#include <ocre_extra.h>
+
 /* keep a reference to the single instance of the runtime */
 
 struct ocre_context *ocre_global_context = NULL;
@@ -19,7 +21,7 @@ int main(int argc, char *argv[])
 {
 	/* Initialize Ocre */
 
-	if (ocre_initialize(NULL)) {
+	if (ocre_initialize(vtables)) {
 		return -1;
 	}
 

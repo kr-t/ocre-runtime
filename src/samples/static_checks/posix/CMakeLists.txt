@@ -16,6 +16,8 @@ target_link_libraries(ocre_cmd
     PUBLIC
     OcreCore
     OcreShell
+    PRIVATE
+    OcreExtra
 )
 
 set(THREADS_PREFER_PTHREAD_FLAG TRUE)
