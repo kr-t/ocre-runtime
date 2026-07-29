@@ -211,7 +211,7 @@ int cmd_container_create_run(struct ocre_context *ctx, const char *argv0, int ar
 	const struct ocre_container_args arguments = {
 		.argv = (const char **)&argv[optind + 1],
 		.capabilities = capabilities,
-		.envp = environment,
+		.envp = NULL,
 		.mounts = mounts,
 	};
 
