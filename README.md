@@ -176,12 +176,12 @@ See below for the available applications and officially supported boards.
 
 The officially supported boards are listed below:
 
-| Board                    | Name                                                                                            |
-| ------------------------ | ----------------------------------------------------------------------------------------------- |
-| `native_sim`             | 32-bit native simulator                                                                         |
-| `native_sim/native/64`   | 64-bit native simulator                                                                         |
-| `pico_plus2/rp2350b/m33` | Pimoroni Pico Plus 2                                                                            |
-| `b_u585i_iot02a`         | [B-U585I-IOT02A](https://docs.zephyrproject.org/latest/boards/st/b_u585i_iot02a/doc/index.html) |
+| Board                      | Name                                                                                            |
+| -------------------------- | ----------------------------------------------------------------------------------------------- |
+| `native_sim`               | 32-bit native simulator                                                                         |
+| `native_sim/native/64`     | 64-bit native simulator                                                                         |
+| `pico_plus2_rp2350b_m33_0` | Pimoroni Pico Plus 2                                                                            |
+| `b_u585i_iot02a`           | [B-U585I-IOT02A](https://docs.zephyrproject.org/latest/boards/st/b_u585i_iot02a/doc/index.html) |
 
 Other boards might work. Check the [Zephyr documentation](https://docs.zephyrproject.org/latest/boards/index.html) for a list of supported boards in Zephyr.
 
