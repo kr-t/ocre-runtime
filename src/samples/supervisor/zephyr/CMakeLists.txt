@@ -6,7 +6,7 @@
 # This file is to be used to build a zephyr firmware including the ocre demo
 # automatically uses the ocre module in the parent directory
 
-cmake_minimum_required(VERSION 3.20.0)
+cmake_minimum_required(VERSION 3.28.0)
 
 # comment out to use the ocre module provided by zephyr
 list(APPEND ZEPHYR_EXTRA_MODULES ${CMAKE_CURRENT_LIST_DIR}/../../../..)
