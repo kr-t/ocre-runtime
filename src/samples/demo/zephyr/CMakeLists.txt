@@ -18,7 +18,7 @@ include(../demo_containers.cmake)
 
 find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 
-project (ocre_sample_mini)
+project (ocre_sample_demo)
 
 target_sources(app
     PRIVATE
