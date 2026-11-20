@@ -319,12 +319,6 @@ int ocre_initialize(const struct ocre_runtime_vtable *const vtable[])
 	runtimes = NULL;
 	contexts = NULL;
 
-	int rc = pthread_mutex_init(&contexts_mutex, NULL);
-	if (rc) {
-		LOG_ERR("Failed to initialize Ocre mutex: rc=%d", rc);
-		return -1;
-	}
-
 	/* Add WAMR runtime to the list */
 
 	struct runtime_node *wamr = malloc(sizeof(struct runtime_node));
